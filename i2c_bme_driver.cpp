@@ -27,7 +27,7 @@ int main()
         float temp = bme.temperature();
         float hum = bme.humidity();
         float press = bme.pressure();
-        printf("température = %f, %f, %f \n", temp, hum, press);
+        printf("temperature = %2.2f°C, humidity = %2.2f% , pressure = %2.2f HPa\n", temp, hum, press/100);
 
         ThisThread::sleep_for(500);
     }
