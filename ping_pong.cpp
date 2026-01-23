@@ -19,16 +19,12 @@ namespace {
 //pas de printf dans une interruption
 void ping(){
     for(int i=0;i<100;i++){
-        printf("Ping \n");
-        ThisThread::sleep_for(100);
-
+        printf("Ping\n");
     }
 }
 void pong(){
     for(int i=0;i<100;i++){
-        printf("Pong \n");
-        ThisThread::sleep_for(100);
-
+        printf("Pong\n");
     }
 }
 
@@ -42,6 +38,5 @@ int main()
         printf("Alive! \n");
         myled = !myled;
         ThisThread::sleep_for(500);
-
     }    
 }
